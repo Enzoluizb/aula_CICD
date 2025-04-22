@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <assert.h>
 
+int somar(int a, int b) {
+    return a + b;
+}
+
 void testar() {
-    // Função de teste simples
-    assert(1 == 1);  // Verifica se 1 é igual a 1
-    printf("Teste passou!\n");
+    assert(somar(2, 3) == 5);
+    assert(somar(-1, 1) == 0);
+    printf("Todos os testes passaram!\n");
 }
 
 int main() {
